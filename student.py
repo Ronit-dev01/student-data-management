@@ -119,7 +119,4 @@ while True:
 
 # this project is for college submission as mini python project too our respected H.O.D DR.ANU SHEETAL
 # ON 20/JULY/2026
-#uej
-# 
-
 
