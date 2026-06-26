@@ -116,7 +116,3 @@ while True:
         break
     else:
         print("invalid choice")
-
-# this project is for college submission as mini python project too our respected H.O.D DR.ANU SHEETAL
-# ON 20/JULY/2026
-
