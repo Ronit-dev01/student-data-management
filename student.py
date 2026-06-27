@@ -89,7 +89,11 @@ def search_student():
         print(60*"-")
         for row in result:
             print(f"{row[0]:<5}{row[1]:<15}{row[2]:<8}{row[3]:<10}{row[4]:<10}{row[5]:<12}")
-            
+
+def delete_student():
+    cursor.execute("DROP DATABASE RECORDS")
+    db.commit()         
+
 while True:
     print("-"*81)
     print("----------------------------STUDENT MANAGEMENT SYSTEM----------------------------".upper())
@@ -114,5 +118,8 @@ while True:
     elif choice=="5":
         print("thank you for using")
         break
+    elif choice=="6":
+        delete_student()
+  
     else:
         print("invalid choice")
