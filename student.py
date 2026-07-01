@@ -2,7 +2,7 @@ import mysql.connector
 db=mysql.connector.connect(
     host='localhost',
     user='root',
-    password="-------",
+    password="sakshi@123",
     database="STUDENT_MANAGEMENT"
 )
 cursor=db.cursor()
@@ -21,10 +21,10 @@ def view_student():
     cursor.execute("SELECT * FROM RECORDS")
     data=cursor.fetchall()
     print(f"{"ID":<5}{"NAME":<15}{"AGE":<5}{"BRANCH":<15}{"SPGA":<8}{"CONATCT":<12}")
-    print(55*"-")
+    print(58*"-")
     for row in data:
         print(f"{row[0]:<5}{row[1]:<15}{row[2]:<5}{row[3]:<15}{row[4]:<8}{row[5]:<12}")
-    print(55*"-")
+    print(58*"-")
 def update_student():
     student_id=int(input("ENTER THE ID OF THE STUDENT : "))
     while True :
